@@ -139,8 +139,8 @@ feature.jiraBoardAsTeam=${JIRA_BOARD_AS_TEAM:-false}
 # all available issue status mappings by going to your instance's version of the following API call:
 # http://fake.jira.com/rest/api/2/status/.  Your statuses are listed in the JSON response as "name."
 feature.todoStatuses[0]=${JIRA_TODO_STATUSES:To do}
-feature.doingStatuses[0]=${JIRA_DOING_STATUSES:处理中}
-feature.doneStatuses[0]=${JIRA_DONE_STATUSES:完成}
+feature.doingStatuses[0]=${JIRA_DOING_STATUSES:\u5904\u7406\u4e2d}
+feature.doneStatuses[0]=${JIRA_DONE_STATUSES:\u5b8c\u6210}
 
 EOF
 
