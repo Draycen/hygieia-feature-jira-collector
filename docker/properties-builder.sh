@@ -133,6 +133,15 @@ feature.jiraTeamFieldName=${JIRA_TEAM_FIELD_NAME}
 # Set this to true if you use boards as team
 feature.jiraBoardAsTeam=${JIRA_BOARD_AS_TEAM:-false}
 
+#Core Artifacts
+# These arrays of status mappings must be completed in order for custom source system statuses to be providable by
+# Hygieia.  Currently, Hygieia only maps to the following 3 status mappings:  to do, doing, and done.  You can find
+# all available issue status mappings by going to your instance's version of the following API call:
+# http://fake.jira.com/rest/api/2/status/.  Your statuses are listed in the JSON response as "name."
+feature.todoStatuses[0]=${JIRA_TODO_STATUSES:To do}
+feature.doingStatuses[0]=${JIRA_DOING_STATUSES:处理中}
+feature.doneStatuses[0]=${JIRA_DONE_STATUSES:完成}
+
 EOF
 
 echo "
