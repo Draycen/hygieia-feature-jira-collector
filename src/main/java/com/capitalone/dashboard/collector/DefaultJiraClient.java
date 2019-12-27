@@ -561,10 +561,10 @@ public class DefaultJiraClient implements JiraClient {
             case "To Do":
                 normalizedStatus = FeatureStatus.BACKLOG;
                 break;
-            case "Done":
+            case "完成":
                 normalizedStatus = FeatureStatus.DONE;
                 break;
-            case "In Progress":
+            case "处理中":
                 normalizedStatus = FeatureStatus.IN_PROGRESS;
                 break;
             default:
