@@ -561,10 +561,31 @@ public class DefaultJiraClient implements JiraClient {
             case "To Do":
                 normalizedStatus = FeatureStatus.BACKLOG;
                 break;
+            case "已分配":
+                normalizedStatus = FeatureStatus.BACKLOG;
+                break;
+            case "Suspended":
+                normalizedStatus = FeatureStatus.BACKLOG;
+                break;
+            case "Opened":
+                normalizedStatus = FeatureStatus.BACKLOG;
+                break;
             case "完成":
                 normalizedStatus = FeatureStatus.DONE;
                 break;
+            case "已关闭":
+                normalizedStatus = FeatureStatus.DONE;
+                break;
+            case "Verified":
+                normalizedStatus = FeatureStatus.DONE;
+                break;
             case "处理中":
+                normalizedStatus = FeatureStatus.IN_PROGRESS;
+                break;
+            case "Confirmed":
+                normalizedStatus = FeatureStatus.IN_PROGRESS;
+                break;
+            case "Reviewed":
                 normalizedStatus = FeatureStatus.IN_PROGRESS;
                 break;
             default:
